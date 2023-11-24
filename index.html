@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HIRA</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c6920433d0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+             <img src="./WhatsApp Image 2023-11-24 at 4.12.25 PM.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#Services">Services</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-regular fa-x" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p><h2>Security Assistant</h2></p>
+            <h1>Hi, I'm <span>HIRA</span> </h1>
+        </div>
+    </div>
+</div>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="./WhatsApp Image 2023-11-24 at 4.12.25 PM.png" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About HIRA</h1>
+                <p>Welcome to HIRA, your premier destination for cutting-edge aftermarket sensor products designed to enhance driving safety. Dive into our carefully curated selection, showcasing advanced technologies for drowsiness detection and accident prevention. Our secure online platform ensures a seamless shopping experience, offering effortless navigation and protected transactions through industry-standard safeguards.
+
+                    Explore our user-friendly interface to discover a world of innovation. Gain valuable insights with our video feature, providing a detailed overview of drowsiness detection and accident prevention moments. Join the HIRA community in championing a safer road culture. Each purchase is a meaningful step towards a worry-free journey, where the synergy of safety and innovation ensures your driving experience is second to none.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="Services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="drow.jpeg" alt="" >
+                <div class="layer">
+                    <h3>Drowsiness Detection</h3>
+                    <p>A front cam is fixed facing the driver which detects whether the eyes of the driver is closed or not.
+                        The driver’s face and eyes are detected separately by the drowsiness model.                         
+                    </p>
+                    <select id="predictionType">
+                        <option value="pick-image">Pick an Image</option>
+                        <option value="pick-video">Pick a Video</option>
+                        <option value="upload-image">Upload Image</option>
+                        <option value="upload-video">Upload Video</option>
+                    </select>
+            
+                    <button onclick="predict()" style="display: inline-block;
+                    background: white;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;width: 20%;font-size: 16px;">Predict</button>
+            
+                <script src="script.js"></script>                </div>
+            </div>
+            <div class="work">
+                <img src="Car-Crash.png" alt="">
+                <div class="layer">
+                    <h3>Accident Detection</h3>
+                    <p>The rear cam which detects lane also detect accidents occurred at the front.
+                        After detection it alerts the driver about the accident to prevent further chaos.
+                        </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="./sen.jpeg" alt="" style="height: 30vh;">
+                <div class="layer">
+                    <h3>Steering Button Sensor</h3>
+                    <p>Input from the steering’s sensor is used to detect a driver’s consciousness while the eyes are wide open. 
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="reviews">
+    <div class="container">
+        <h1 class="sub-title">User Reviews</h1>
+        <div class="reviews-list">
+            <div>
+                <h2>Calvin</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            
+            </div>
+            <div>
+                <h2>Eugene</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                
+            </div>
+        </div>
+        <a href="#reviews" class="btn">See More</a>
+    </div>
+</div>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-sharp fa-solid fa-envelope"></i> Hira@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 1234567890</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="contact-rightt">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="name" placeholder="your name" required>
+                    <input type="email" name="email" placeholder="your email" required>
+                    <textarea name="message" rows="6" placeholder="your message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright &copy; 2023 <i class="fa-solid fa-heart"></i>HIRA</a>.</p>
+    </div>
+</div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname) { // Added event parameter
+        for (var i = 0; i < tablinks.length; i++) { // Used regular for loop
+            tablinks[i].classList.remove("active-link");
+        }
+        for (var i = 0; i < tabcontents.length; i++) { // Used regular for loop
+            tabcontents[i].classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+
+<script>
+    // JavaScript code
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyHvXiGU9kpEWfE0KE6TUMU1aYT9uqRC5dBmJ9aYQCcY1uiFNwN1O39_GVpqIMm20wL/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="message sent successfully!"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
