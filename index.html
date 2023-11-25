@@ -10,7 +10,7 @@
 </head>
 <body>
 <div id="header">
-    <div class="container">
+    <div class="navi">
         <nav>
              <img src="./WhatsApp Image 2023-11-24 at 4.12.25 PM.png" class="logo">
             <ul id="sidemenu">
@@ -30,7 +30,7 @@
     </div>
 </div>
 <div id="about">
-    <div class="container">
+    <div class="navi">
         <div class="row">
             <div class="about-col-1">
                 <img src="./WhatsApp Image 2023-11-24 at 4.12.25 PM.png" alt="">
@@ -45,7 +45,7 @@
     </div>
 </div>
 <div id="Services">
-    <div class="container">
+    <div class="navi">
         <h1 class="sub-title">My Services</h1>
         <div class="work-list">
             <div class="work">
@@ -90,26 +90,24 @@
     </div>
 </div>
 <div id="reviews">
-    <div class="container">
+    <div class="navi">
         <h1 class="sub-title">User Reviews</h1>
         <div class="reviews-list">
             <div>
                 <h2>Calvin</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
+                <p>reviews</p>
             
             </div>
             <div>
                 <h2>Eugene</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                
+                <p>reviews</p>
             </div>
         </div>
         <a href="#reviews" class="btn">See More</a>
     </div>
 </div>
 <div id="contact">
-    <div class="container">
+    <div class="navi">
         <div class="row">
             <div class="contact-left">
                 <h1 class="sub-title">Contact Me</h1>
@@ -165,24 +163,6 @@
 </script>
 
 
-<script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbyHvXiGU9kpEWfE0KE6TUMU1aYT9uqRC5dBmJ9aYQCcY1uiFNwN1O39_GVpqIMm20wL/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const msg=document.getElementById("msg")
-  
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-            msg.innerHTML="message sent successfully!"
-            setTimeout(function(){
-                msg.innerHTML=""
-            },5000)
-            form.reset()
-        })
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
 <script>
      function predict() {
             var predictionType = document.getElementById('predictionType').value;
